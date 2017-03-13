@@ -6,10 +6,9 @@ package model;
 public class ShapeCalculator {
 
 
-
     public double squareArea(Square square) {
 
-        double area = square.a * square.a;
+        double area = square.getA() * square.getA();
 
         return area;
 
@@ -17,17 +16,17 @@ public class ShapeCalculator {
 
 
     public double circleArea(Circle circle) {
-        double area = (2 * 3.14 * circle.r);
+        double area = (2 * 3.14 * circle.getR());
         return area;
     }
 
     public double triangleParimeter(Triangle triangle) {
-        double parimeter = (triangle.a + triangle.b + triangle.c);
+        double parimeter = (triangle.getA() + triangle.getB()+ triangle.getC());
         return parimeter;
     }
 
     public double rectPerimeter(Rectangle rectangle) {
-        double parimeter = (2 * rectangle.a + 2 * rectangle.b);
+        double parimeter = (2 * rectangle.getA() + 2 * rectangle.getB());
         return parimeter;
 
 

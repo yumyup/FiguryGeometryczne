@@ -7,9 +7,14 @@ public class Rectangle {
     private double a;
     private double b;
 
-    Rectangle(double a, double b) {
+    public Rectangle(double a, double b) {
         this.a = a;
         this.b = b;
+    }
+
+    public double calculateArea() {
+        double rectangle = a * b;
+        return rectangle;
     }
 
     public double getA() {
